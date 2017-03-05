@@ -1,0 +1,35 @@
+
+
+
+Protocol for transmitting configuration
+
+
+
+
+
+Initial connection:
+
+init/state
+
+"on"
+"off"
+
+
+
+Switching on and off
+
+switch/on
+switch/off
+
+"ACK"
+
+
+# mode -> modo schedule (0) o modo eco (1)
+# t1 -> tiempo de start if mode 0 o tiempo de carga if mode 
+# t2 -> tiempo de fin if mode 0 o deadline if mode 1
+
+
+Configuration commands
+
+command/sched/time1/time2 --->    "command/sched/8/9"
+command/eco/time1/time2  ---->    "command/eco/2/23"
